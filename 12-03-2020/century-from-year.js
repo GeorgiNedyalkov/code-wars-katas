@@ -9,9 +9,8 @@ function century(year) {
     }
 }
 
+console.log(century(1705));
 
-
-// centuryFromYear(1705)  return (18)
 // centuryFromYear(1900)  return (19)
 // centuryFromYear(1601)  return (17)
 // centuryFromYear(2000)  return (20)
