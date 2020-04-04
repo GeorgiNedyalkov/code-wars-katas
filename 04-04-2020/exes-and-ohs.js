@@ -1,8 +1,7 @@
 function XO(str) {   
     let xAmount = 0;
     let oAmount = 0;
-    let same = true; 
-    
+    let same = true;     
 
     for (let i = 0; i < str.length; i++) {
         if (str[i] === 'x' || str[i] === 'X') {
@@ -12,11 +11,7 @@ function XO(str) {
         }         
     }
 
-    if (xAmount === oAmount) {
-        return same;
-    } else {
-        return !same; 
-    }    
+    return xAmount == oAmount;
 }
 
 
