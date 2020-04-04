@@ -18,7 +18,6 @@ function digitize(n) {
   
 }
 
-digitize(348597)
 
 
 
