@@ -16,7 +16,7 @@ function area(d,l) {
         return "Not a rectangle";
     }    
 
-    let w = Math.sqrt(Math.pow(d, 2) - Math.pow(l, 2));
+    let w = Math.sqrt(d**2 - l**2);
     let rectangleA = w * l;
 
     if (rectangleA % 1 != 0) {
@@ -25,6 +25,11 @@ function area(d,l) {
     }
 
     return rectangleA;
+}
+
+// using a ternary operator - ? 
+function simpleAreaB(d,l){
+    return (d <= l) ? 'Not a rectangle' : +(Math.sqrt(d**2 - l**2) * l).toFixed(2);
 }
 
 console.log(area(5, 4));  // 12
