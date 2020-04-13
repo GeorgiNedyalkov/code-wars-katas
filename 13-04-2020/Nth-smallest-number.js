@@ -1,8 +1,7 @@
 function nthSmallest(arr, pos){
     
-    let sortedArr = arr.sort((a, b) => a - b);
+    return arr.sort((a, b) => a - b)[pos - 1]
 
-    return sortedArr[pos-1]   
 }
 
 console.log(nthSmallest([3,1,2],2));
