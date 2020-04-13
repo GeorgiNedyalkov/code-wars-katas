@@ -27,7 +27,7 @@ function convertMyDollars(usd, currency) {
         
     } 
 
-    let endMessage = `You now have ${result}, of ${currency}`;
+    let endMessage = `You now have ${result}, of ${currency}.`;
     
     return endMessage;    
 }
@@ -37,6 +37,8 @@ function bin_to_dec(bstr) {
     .replace(/[^01]/gi, ''), 2);
 }
 
+
+  // Conversion rates tables
 CONVERSION_RATES = {
     "Argentinian Peso": 10,
     "Armenian Dram": 478,
@@ -62,19 +64,6 @@ CONVERSION_RATES = {
     "Vietnamese Dong": 101100000101101
   }
 
-  console.log(convertMyDollars(7, "Armenian Dram"));
-  console.log(convertMyDollars(322, "Armenian Dram"));
-  console.log(convertMyDollars(25, "Bangladeshi Taka"));
-  console.log(convertMyDollars(730, "Bangladeshi Taka"));
-  console.log(convertMyDollars(37, "Croatian Kuna"))
-  console.log(convertMyDollars(40, "Croatian Kuna"))
-  console.log(convertMyDollars(197, "Czech Koruna"));
-  console.log(convertMyDollars(333, "Czech Koruna"));
-  console.log(convertMyDollars(768, "Dominican Peso"));
-  console.log(convertMyDollars(983, "Dominican Peso"));
-
-
-  // Conversion rates table
 
 
 
